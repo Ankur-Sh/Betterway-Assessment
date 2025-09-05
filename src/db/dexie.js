@@ -12,6 +12,12 @@ db.version(1).stores({
 // {
 //     food: '++id, name, quantity, price'
 // }
+// {
+//     title: '',
+//     start: '',
+//     duration: '',
+//     doctor: '',
+// }
 
 
 // Example functions
