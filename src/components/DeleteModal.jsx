@@ -5,7 +5,7 @@ const DeleteModal = ({ selectedEvent, onDelete, onCancel }) => {
 
   return (
     <div className="modal">
-      <p>Delete appointment: <strong>{selectedEvent.title}</strong>?</p>
+      <p>Delete appointment between: <strong>{selectedEvent.title}</strong>?</p>
       <button onClick={() => onDelete(selectedEvent.id)}>Yes, Delete</button>
       <button onClick={onCancel}>Cancel</button>
     </div>

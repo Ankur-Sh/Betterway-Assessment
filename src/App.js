@@ -24,7 +24,7 @@ function App() {
        Resource-Based Clinic Calendar
       </h1>
       <AppointmentForm appointments={appointments} onAdd={handleAddAppointment} />
-      {/* <CalendarView appointments={appointments} onEventClick={(info) => setSelectedEvent(info.event)} /> */}
+      <CalendarView appointments={appointments} onEventClick={(info) => setSelectedEvent(info.event)} />
       <DeleteModal selectedEvent={selectedEvent} onDelete={handleDelete} onCancel={() => setSelectedEvent(null)} />
     </div>
   );

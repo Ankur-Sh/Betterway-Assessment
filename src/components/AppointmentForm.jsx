@@ -22,7 +22,7 @@ const AppointmentForm = ({ onAdd, appointments }) => {
       if (appt.extendedProps.doctor !== form.doctor) return false;
       const apptStart = new Date(appt.start);
       const apptEnd = new Date(appt.end);
-      return newStart < apptEnd && newEnd > apptStart; //checking for collision of meetings
+      return newStart < apptEnd && newEnd > apptStart;
     });
   };
 
@@ -43,7 +43,7 @@ const AppointmentForm = ({ onAdd, appointments }) => {
   return (
     <form onSubmit={handleSubmit}>
       <h3>Add Appointment</h3>
-      <div>
+      <div className='appointment-form'>
       <input name="title" placeholder="Patient Name" required onChange={handleChange} />
       <input type="datetime-local" name="start" required onChange={handleChange} />
       <input type="number" name="duration" value={form.duration} onChange={handleChange} />
@@ -52,7 +52,7 @@ const AppointmentForm = ({ onAdd, appointments }) => {
           <option key={doc} value={doc}>{doc}</option>
         ))}
       </select>
-      <button type="submit">Add Appointment</button>
+      <button className='submit-form' type="submit">Add Appointment</button>
       </div>
     </form>
   );

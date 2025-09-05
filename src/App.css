@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+
+.modal{
+  background-color: red;
+  padding: 10px 20px;
+  margin: 2% 25%;
+}
+.appointment-form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+  margin:0 25%;
+}
+.submit-form{
+  background-color: rgb(255, 245, 47);
+  cursor: pointer;
+}
+.submit-form:hover{
+  background-color: greenyellow;
+}
